@@ -9,7 +9,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Contacto {
+public class Persona {
     private String name;
     private List<String> phones;
 
@@ -19,14 +19,14 @@ public class Contacto {
      * @param phone
      * Crea un Contacto con los datos introducidos.
      */
-    public Contacto(String name, String phone) {
+    public Persona(String name, String phone) {
         this.name = name;
         this.phones = new ArrayList<>();
         this.phones.add(phone);
     }
 
     /**
-     * Devuelve el nombre del {@link Contacto}.
+     * Devuelve el nombre del {@link Persona}.
      * @return
      */
     public String getName() {
@@ -34,7 +34,7 @@ public class Contacto {
     }
 
     /**
-     * Devuelve el teléfono del {@link Contacto}.
+     * Devuelve el teléfono del {@link Persona}.
      * @return
      */
     public List<String> getPhones() {
