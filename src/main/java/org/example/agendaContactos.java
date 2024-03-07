@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Agenda {
+public class agendaContactos {
     private List<Contacto> contacts; // Lista de Contacto
 
     /**
      * Método para crear la agenda con los contactos.
      */
-    public Agenda() {
+    public agendaContactos() {
         this.contacts = new ArrayList<>();
     }
 
