@@ -6,9 +6,7 @@ public class Main {
         agendaContactos agenda = new agendaContactos();
 
         // Añadir contactos a la agenda.
-        agenda.addContact("John Doe", "1234567890");
-        agenda.addContact("Jane Doe", "9876543210");
-        agenda.addContact("Mary Jane", "1122334455");
+        initAgenda(agenda);
 
         // Imprimir todos los contactos de la agenda.
         System.out.println("Todos los contactos: ");
@@ -29,5 +27,11 @@ public class Main {
         for (Contacto c : agenda.getContacts()) {
             System.out.println(c.getName() + " -> " + c.getPhones());
         }
+    }
+
+    private static void initAgenda(agendaContactos agenda) {
+        agenda.addContact("John Doe", "1234567890");
+        agenda.addContact("Jane Doe", "9876543210");
+        agenda.addContact("Mary Jane", "1122334455");
     }
 }
