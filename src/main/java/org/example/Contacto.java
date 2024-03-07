@@ -9,7 +9,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-class Contacto {
+public class Contacto {
     private String name;
     private List<String> phones;
 
