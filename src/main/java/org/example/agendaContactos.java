@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class agendaContactos {
+public class agendaContactos implements Agenda {
     private List<Persona> contacts; // Lista de Contacto
 
     /**
@@ -26,6 +26,7 @@ public class agendaContactos {
      * @param phone
      * Método para añadir un {@link Persona} a la agenda.
      */
+    @Override
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Persona c : contacts) {
@@ -47,6 +48,7 @@ public class agendaContactos {
      * @param name
      * Método para borrar un {@link Persona} de la agenda.
      */
+    @Override
     public void removeContact(String name) {
         Iterator<Persona> it = contacts.iterator();
 
@@ -66,6 +68,7 @@ public class agendaContactos {
      * @param newPhone
      * Método para modificar el número de teléfono de un {@link Persona}.
      */
+    @Override
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Persona c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
@@ -85,6 +88,7 @@ public class agendaContactos {
      * @return
      * Devuelve los {@link Persona}s
      */
+    @Override
     public List<Persona> getContacts() {
         return this.contacts;
     }
